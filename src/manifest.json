@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "My Extension",
+    "version": "1.0",
+    "description": "Demo Extension",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["tabs"]
+}

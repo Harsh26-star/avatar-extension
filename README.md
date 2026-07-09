@@ -9,6 +9,7 @@ Browser Buddy is a Chrome Extension that adds a small animated avatar to your br
 - Displays an animated avatar on web pages.
 - Stays visible while you browse.
 - Lightweight and easy to load as an unpacked Chrome extension.
+- Detects active tab domain and switches avatar state(focus/bored/idle) accordingly.
 
 ## How to load it in Chrome ?
 

@@ -18,7 +18,7 @@ chrome.tabs.onActivated.addListener((activeInfo) => {
     let url = tab.url;
     
     state = getStateForUrl(url)
-    chrome.tabs.sendMessage(activeInfo.tabId, {state: state});
+    console.log(state);
   });
 });
 
@@ -26,6 +26,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status === "complete") {
         let url = tab.url;
         state = getStateForUrl(url)
-        chrome.tabs.sendMessage(tabId, {state: state});
+        console.log(state)
     }
 });

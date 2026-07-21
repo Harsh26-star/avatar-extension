@@ -15,7 +15,7 @@ function startInactivityTimer() {
   inactivityTimer = setTimeout(() => {
     setAvatarState("sleeping")
     isSleeping = true;
-  }, 3000);
+  }, 30000);
 }
 
 const container = document.createElement("div");

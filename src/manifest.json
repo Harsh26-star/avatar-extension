@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "My Extension",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Demo Extension",
     "background": {
         "service_worker": "background.js"
@@ -11,6 +11,12 @@
         {
             "matches": ["<all_urls>"],
             "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["assets/*.png"],
+            "matches": ["<all_urls>"]
         }
     ]
 }
